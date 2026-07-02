@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlueStock | Cadastro</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="auth-body">
+  <main class="auth-wrapper reverse">
+    <section class="auth-card" aria-label="Formulário de cadastro">
+      <h2 id="tituloCadastroUsuario">Criar conta</h2>
+      <p class="muted">Cadastre um usuário para acessar o sistema.</p>
+
+      <div id="alertaCadastroUsuario" class="alert hidden" role="alert"></div>
+
+      <form id="formCadastroUsuario" autocomplete="off">
+        <label for="nomeUsuario">Nome</label>
+        <input id="nomeUsuario" name="nomeUsuario" type="text" placeholder="Nome completo" required minlength="3" />
+
+        <label for="emailUsuario">E-mail</label>
+        <input id="emailUsuario" name="emailUsuario" type="email" placeholder="usuario@email.com" required />
+
+        <label for="senhaUsuario">Senha</label>
+        <input id="senhaUsuario" name="senhaUsuario" type="password" placeholder="Mínimo 6 caracteres" required minlength="6" />
+
+        <button id="btnCadastrarUsuario" class="btn btn-primary" type="submit">Cadastrar</button>
+      </form>
+
+      <p class="auth-footer">Já possui conta? <a id="linkLogin" href="index.html">Voltar para login</a></p>
+    </section>
+
+    <section class="auth-hero" aria-label="Apresentação do cadastro">
+      <div class="brand auth-brand">
+        <div class="brand-logo" id="logoSistemaCadastro">BS</div>
+        <div>
+          <h1>BlueStock</h1>
+          <p>Controle inteligente de produtos</p>
+        </div>
+      </div>
+      <div class="hero-content">
+        <span class="badge">Cadastro de usuários</span>
+        <h2>Crie acessos e simule cenários reais de autenticação.</h2>
+        <p>Ideal para treinar validações, mensagens, redirecionamentos e persistência local.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

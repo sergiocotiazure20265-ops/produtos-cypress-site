@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlueStock | Login</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="auth-body">
+  <main class="auth-wrapper">
+    <section class="auth-hero" aria-label="Apresentação do sistema">
+      <div class="brand auth-brand">
+        <div class="brand-logo" id="logoSistema">BS</div>
+        <div>
+          <h1>BlueStock</h1>
+          <p>Controle inteligente de produtos</p>
+        </div>
+      </div>
+      <div class="hero-content">
+        <span class="badge">Sistema para testes com Cypress</span>
+        <h2>Gerencie produtos com uma interface moderna, rápida e responsiva.</h2>
+        <p>Use este projeto em sala para praticar automação de testes em fluxos de login, cadastro, consulta, edição e exclusão.</p>
+      </div>
+    </section>
+
+    <section class="auth-card" aria-label="Formulário de login">
+      <h2 id="tituloLogin">Entrar no sistema</h2>
+      <p class="muted">Acesse sua conta para gerenciar os produtos.</p>
+
+      <div id="alertaLogin" class="alert hidden" role="alert"></div>
+
+      <form id="formLogin" autocomplete="off">
+        <label for="emailLogin">E-mail</label>
+        <input id="emailLogin" name="emailLogin" type="email" placeholder="admin@bluestock.com" required />
+
+        <label for="senhaLogin">Senha</label>
+        <input id="senhaLogin" name="senhaLogin" type="password" placeholder="Digite sua senha" required />
+
+        <button id="btnEntrar" class="btn btn-primary" type="submit">Entrar</button>
+      </form>
+
+      <p class="auth-footer">Ainda não tem conta? <a id="linkCadastroUsuario" href="cadastro.html">Criar usuário</a></p>
+      <p class="hint">Usuário inicial: <strong>admin@bluestock.com</strong> / <strong>Admin@123</strong></p>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
